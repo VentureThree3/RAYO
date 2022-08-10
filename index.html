@@ -1,0 +1,79 @@
+<!DOCTYPE html><html><head>
+    <script src="p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/addons/p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <script src="jquery-1.12.4.js"></script>
+  <script src="jquery-ui.js"></script>
+
+</head>
+
+<body>
+  <div class="window">
+     <button id="microphone" type="button">MICROPHONE ON</button>
+    <div class="inputs">
+      <label for="Input1">TEXT:</label>
+      <input id="input1" class="input" type="text" contenteditable="true" autocorrect="false" placeholder="TYPE HERE">
+    
+ <label for="Genre">INPUT:</label>
+    <select id="Genre">
+      <option id="Microphone" value="Microphone" onclick="apiAsk()">MICROPHONE</option>
+      <option id="Jazz" value="Jazz" onclick="apiAsk()">JAZZ</option>
+      <option id="Rock" value="Rock" onclick="apiAsk()">ROCK</option>
+      <option id="Dance" value="Dance" onclick="apiAsk()">DANCE</option>
+         <option id="Radio" value="Radio" onclick="apiAsk()">RADIO</option>
+      <option id="Laugh" value="Laugh" onclick="apiAsk()">CHAT</option>
+       <option id="None" value="None" onclick="apiAsk()">MOUSE</option>
+    </select>
+    
+    <label for="Font">FONT:</label>
+    <select id="Font">
+       <option id="Twent" value="Twent" onclick="apiAsk()">TWENT</option>
+       <option id="DMSans" value="DMSans" onclick="DMSans">DMSANS</option>
+       <option id="WildYouth" value="WildYouth" onclick="apiAsk()">WILD YOUTH</option>
+      <option id="Mabry" value="Mabry" onclick="apiAsk()">MABRY</option>
+    </select>
+  
+    
+    <label for="Colour">TEXT COLOUR:</label>
+    <select id="Colour">
+      <option value="White" id="White">WHITE</option>
+      <option value="Purple" id="Purple">PURPLE</option>
+      <option value="Yellow" id="Yellow">YELLOW</option>
+      <option value="Black" id="Black">BLACK</option>
+    </select>
+      
+       <label for="jackgroundColour">BACKGROUND:</label>
+    <select id="jackgroundColour">
+  <option id="purplebackground" value="#8F00FF">PURPLE</option>
+      <option id="yellowbackground" value="#FFE809">YELLOW</option>
+      <option id="blackbackground" value="#14141E">BLACK</option>
+      <option id="whitebackground" value="#ffffff">WHITE</option>
+       </select>
+    
+    
+    <label for="shaderSelect">DISTORTION:</label>
+    <select id="shaderSelect">
+      <option value="Slides">SQUARE</option>
+      <option value="Wavy">WAVE</option>
+    </select>
+    
+     <label for="textscale">SCALE:</label>
+     <input type="range" min="100" max="3000" value="1000" id="textscale" step="1">
+
+    
+     <label for="repeattextY">REPEAT:</label>
+     <input type="range" min="0" max="50" value="0" id="repeattextY" step="1">
+      <br><br><br>
+      <button id="save">SAVE</button>
+        </div>
+  </div>
+  
+
+ <script src="sketch.js"></script>
+
+    
+
+    
+</body></html>
